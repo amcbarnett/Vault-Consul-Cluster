@@ -1,6 +1,7 @@
 # Vault specific Security Group
 module "vault_service" {
   source = "terraform-aws-modules/security-group/aws"
+  version = "2.*"
 
   name        = "vault_service-${var.environment_name}"
   description = "vault services"
@@ -25,6 +26,7 @@ module "vault_service" {
 # Consul specific Security Group
 module "consul_service" {
   source = "terraform-aws-modules/security-group/aws"
+  version = "2.*"
 
   name        = "consul_service-${var.environment_name}"
   description = "consul services"
@@ -38,6 +40,7 @@ module "consul_service" {
 
 module "mysql_service" {
   source = "terraform-aws-modules/security-group/aws"
+  version = "2.*"
 
   name        = "mysql-service-${var.environment_name}"
   description = "mysql services"
