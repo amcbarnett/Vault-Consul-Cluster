@@ -17,10 +17,10 @@ variable "environment_name" {
   description = "base name of environment"
 }
 
-variable "avail_zones" {
-  description = "availability zones to deploy into"
-  type        = "list"
-}
+#variable "avail_zones" {
+#  description = "availability zones to deploy into"
+#  type        = "list"
+#}
 
 variable "vault_ami" {
   description = "Vault AMI Image"
