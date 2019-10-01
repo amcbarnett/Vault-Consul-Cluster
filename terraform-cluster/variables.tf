@@ -20,6 +20,7 @@ variable "environment_name" {
 variable "avail_zones" {
   description = "availability zones to deploy into"
   type        = "list"
+  default = ["us-east-2a"]
 }
 
 variable "vault_ami" {
