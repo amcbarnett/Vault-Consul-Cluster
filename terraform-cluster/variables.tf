@@ -1,6 +1,6 @@
 variable "region" {
   description = "Main Region to Deploy instances"
-  default     = "us-east-2"
+  default     = ""
 }
 
 variable "consul_cluster_size" {
